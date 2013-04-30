@@ -1,4 +1,4 @@
-nodejs-starter-site
+playlist-app
 ===================
 
-A NodeJS starter template for creating a website
+Built with playlist-api and 7digital
