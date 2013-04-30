@@ -2,8 +2,11 @@
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    
-    script(src=base + '/javascripts/jquery-1.7.min.js')
-    script(src=base + '/javascripts/modernizr.js')    
-  body!= body
+    block style
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    block scripts
+        script(src=base + '/javascripts/jquery-1.7.min.js')
+        script(src=base + '/javascripts/modernizr.js')    
+  body
+    div.page-container
+        block content

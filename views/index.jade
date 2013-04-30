@@ -1,9 +1,6 @@
-h1= title
-p Welcome to #{title}
-p This is a very lightweight template to get you started using NodeJS to build a website.
-p There's a few node modules ready for use:
-ul
-    li coffee-script
-    li express
-    li jade
-    li less
+extends layout
+
+block content
+    h1= title
+    div
+        a(href='/playlist/new') Create a new playlist
