@@ -1,6 +1,10 @@
 extends layout
 
 block content
-    h1= title
-    div
-        a(href='/playlist/new') Create a new playlist
+    div.clearfix
+        div.field-wrapper
+            p#background-text Start listening... 
+            input(type='text', value='')
+        div.float-right.button-wrapper
+            a.btn(href='#') Invite someone
+
