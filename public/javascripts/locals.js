@@ -13,9 +13,9 @@ module.exports = function(req, res, next) {
     // override the render method to automatically detect mobile devices
     var r1 = res.render;
     res.render = function(view, model, next) {
-        var rd = getRenderData(req, view);
-        model.layout = rd.layout;        
-        r1.call(res, rd.view, model, next);
+        //var rd = getRenderData(req, view);
+        //model.layout = rd.layout;        
+        r1.call(res, view, model, next);
     }
     
     // allow the next piece of middleware to execute
